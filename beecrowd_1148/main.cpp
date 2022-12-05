@@ -9,14 +9,13 @@ using ii = pair<int, int>;
  * Função adaptada de Edson Alves (https://github.com/edsomjr/TEP/blob/master/Grafos/slides/floyd-warshall/floyd-warshall.pdf)
  */
 vector<vector<int>> floyd_warshall(vector<ii> adj[], int N) {
-    //
     vector<vector<int>> dist(N + 1, vector<int>(N + 1, oo));
 
     // A distância (horas gastas) entre um nó e ele mesmo é 0
     for (int x = 1; x <= N; x++)
         dist[x][x] = 0;
 
-    // Atualiza a distância dos nós com aresta direta
+    // Atualiza a distância entre as agências com acordos de envio de mensagens (arestas diretas)
     for (int x = 1; x <= N; x++)
         for (auto [y, h] : adj[x])
             dist[x][y] = h;
@@ -35,8 +34,8 @@ int main() {
     int N;  // Número de cidades (Nós)
     int E;  // Número de acordos de envios de mensagens (Arestas)
 
-    // Loop enquanto N e E != 0
-    while (cin >> N >> E && (N || E)) {
+    // Loop termina quando N = E = 0
+    while (cin >> N >> E, N != 0 or E != 0) {
         vector<ii> graph[N + 1];  // Grafo de agências e acordos de envio de cartas
         int X, Y, H;
 
