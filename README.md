@@ -18,6 +18,10 @@ Os exercício resolvidos foram:
 - [1205 - Cerco a Leningrado](https://www.beecrowd.com.br/judge/pt/problems/view/1205)
 - [1152 - Estradas Escuras](https://www.beecrowd.com.br/judge/pt/problems/view/1152)
 
+## Link da apresentação
+
+[Vídeo de Apresentação](./assets/apresentacao.mp4)
+
 ## Screenshots
 ![](https://cdn.discordapp.com/attachments/1020837143792341075/1049514399850823710/Screenshot_from_2022-12-05_23-31-51.png)
 ![](https://cdn.discordapp.com/attachments/1020837143792341075/1049514400790351923/Screenshot_from_2022-12-05_23-32-27.png)
